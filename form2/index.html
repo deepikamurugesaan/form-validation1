@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+    <div class="container">
+      <!-- <i class="ion-social-twitter"></i> -->
+        <form class="form" action="index2.html" method="POST" target="_blank">
+          <div id="header">  <h2>Say Hello!</h2></div>
+
+          <div class="form-control">
+<div class="input"><label for="fname">First name</label>
+  <input type="text" id="fname" class="fname" placeholder="Name" onkeyup=" namePerson()" >
+  <span id="nameerror"></span></div>
+<div class="input"><label for="email">Email</label>
+  <input type="text" id="email" class="email" placeholder="Email" onkeyup="emailPerson()"><span id="emailerror"></div>
+
+<div class="input"><label for="service">Needed Services</label>
+  <select name="service" id="service" onmouseover="myservice()">
+    <option value="">Select</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+  </select><span id="serviceerror"></span></div>
+
+  <div class="input">
+    <label for="budget">Budget</label>
+  <select name="budget" id="budget" onmouseover="mybudget()">
+    <option value=""> Select</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option></select><span id="budgeterror"></span>
+  </div>
+  <div class="input"><label for="msg">Email</label>
+    <input type="text" id="msg" class="msg" placeholder="Message" onkeyup="mesPerson()"><span id="messageerror"></span></div>
+ 
+  </div>
+  <div class="btn"><button type="submit" class="btns" value="Submit" onclick=" return validate()" >Submit</button>
+    </div><span id="allerror"></span>
+ </form>
+</div>
+<script src="app1.js"></script>
+</body>
+</html>
